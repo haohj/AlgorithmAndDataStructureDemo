@@ -28,9 +28,21 @@ public class sortArrayByParity {
                 A[index++] = tem;
             }
         }
-
         return A;
     }
+
+    public static int[] sortArrayByParity2(int[] A) {
+        int index = 0;
+        for (int i = 0; i < A.length; i++) {
+            if (A[i] % 2 == 0) {
+                int tem = A[i];
+                A[i] = A[index];
+                A[index++] = tem;
+            }
+        }
+        return A;
+    }
+
 
     public static void print(int[] result) {
         String out = "[";
