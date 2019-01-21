@@ -16,8 +16,9 @@ package com.hao.simple;
         字符串中的字符仅含有 'a'~'z'。*/
 public class findLUSlength {
     public static int findLUSlength(String a, String b) {
-        if (a.equals(b))
+        if (a.equals(b)) {
             return -1;
+        }
         if((a.length()<100 && b.length()<100)){
             if(a.length()>=b.length()){
                 return a.length();
